@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="tailwind.css" rel="stylesheet" />
+  
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body class="grid justify-center dark">
+  <header class="md:flex  justify-center flex py-6 px-8 w-screen">
+    <div id="nav-bar" class="container grid md:justify-between justify-start md:flex py-2 px-8">
+      <logo><a href="#" class="text-2xl hover:text-blue-500">Portfolio</a></logo>
+      <nav id="navbar" class="hidden md:flex gap-8 text-md md:flex-wrap md:justify-center md:mt-0 mt-4 md:w-[400px]">
+        <li>
+          <a href="#" class="flex-auto leading-10 py-3 hover:text-blue-500">HOME</a>
+        </li>
+        <li>
+          <a href="#" class="flex-auto leading-10 py-3 hover:text-blue-500">ABOUT</a>
+        </li>
+        <li>
+          <a href="#" class="flex-auto leading-10 py-3 hover:text-blue-500">PROJECT</a>
+        </li>
+        <li>
+          <a href="#" class="flex-auto leading-10 py-3 hover:text-blue-500">SKILL</a>
+        </li>
+        <li>
+          <a href="#" class="flex-auto leading-10 py-3 hover:text-blue-500">CONTACT</a>
+        </li>
+      </nav>
+    </div>
+
+    <button class="md:hidden relative left-2  h-0 mt-2" onclick="toggleNavbar()">
+      <ion-icon id="menuIcon" name="menu" class="text-4xl"></ion-icon>
+    </button>
+    <button onclick="darkModeToggle()" class="relative left-4 top-3 h-0 text-2xl darkmode">
+    <ion-icon name="moon-outline" id="moon"></ion-icon>
+  </button>
+  </header>
+  
+  <section id="intro" class="flex justify-center mx-8 mt-16">
+    <div class="container grid leading-6 mx-auto px-auto justify-center">
+      <name class="text-2xl">Ham Songhy</name>
+      <p class="text-xl">Web Developer/Designer</p>
+      <h1 id="greet" class="text-5xl mt-4">
+        Hey there! I’m a creative graphic <br />and web designer/developer
+        based <br />in Phnom Penh.
+      </h1>
+    </div>
+  </section>
+  <work class="mx-8 mt-16 flex justify-around text-white">
+    <project1 class="">
+      <img id="project1" class="" src="download1.jpg" />
+      <h2>Project 1</h2>
+      <p class="mr-8">Grapgic Design</p>
+    </project1>
+    <project2 class="">
+      <img src="download.jpg" class="max-w-full h-auto" />
+      <h2>Project 2</h2>
+      <p>Web Design</p>
+    </project2>
+  </work>
+ <script src="script.js"></script>
+    
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

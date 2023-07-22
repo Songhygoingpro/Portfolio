@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('path/to/fontfile.ttf') format('truetype');
+  }
+  logo {
+    font-family: "kanit";
+    
+  }
